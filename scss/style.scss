@@ -1,0 +1,354 @@
+// FONTS
+
+//body font
+$body-font: 'Roboto Slab', serif;
+//main headers
+$heading-font: 'Allan', cursive;
+//sub-headings
+$subhead-font: 'Oswald', sans-serif;
+// links and special cases
+$link-font: 'Cutive Mono', monospace;
+
+// COLORS
+
+//blues
+$mirage: #0F1A26;
+$mirage-lt: #25405d;
+$torea-bay: #2727A4;
+$dull-blue: #4545D3;
+$pale-blue: #AAD5F5;
+//reds
+$torch: #FB0F3B;
+$scarlet: #F92E4E;
+//greys and whites
+$purp-ghost: #FAF8FF;
+$ghost: rgba(250, 248, 255, 0.8);
+$hot-concrete: #e6dddd;
+$cool-concrete: #dae1e8;
+
+// * {
+//     box-sizing: border-box;
+// }
+
+//grid
+// .one{width: 8.3333%;}
+// .two{width: 16.66667%;}
+// .three{width: 25%;}
+// .four{width: 33.3333%;}
+// .five{width: 41.66667%;}
+// .six{width: 50%;}
+// .seven{width: 58.3333%;}
+// .eight{width: 66.66667%;}
+// .nine{width: 75%;}
+// .ten{width: 83.3333%;}
+// .eleven{width: 91.66667%;}
+// .twelve{width: 100%;}
+
+body {
+  font: 100% $body-font;
+  font-size: 1.25rem;
+  color: $mirage-lt;
+  background-color: $cool-concrete;
+}
+.wrapper {
+    margin: 20px;
+}
+h1 {
+    font: 100% $heading-font;
+    font-size: 5rem;
+    color: $mirage;
+    text-align: center;
+}
+h2 {
+    font: 100% $subhead-font;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $scarlet;
+}
+h3 {
+    font: 100% $link-font;
+    font-size: 2.5rem;
+    color: $dull-blue;
+}
+li {
+    color: $torea-bay;
+}
+a {
+    text-decoration: none;
+}
+.row, .collapsible-body .row {
+    margin-bottom: 0.5rem;
+}
+.row .col {
+    float: none;
+}
+.inline_link {
+    color: $scarlet
+}
+.btn {
+    font: $link-font;
+    background-color: rgba(255,255,255,0);
+    color: $mirage;
+    border: 1px solid $mirage;
+    margin-bottom: 1rem;
+}
+.btn:hover {
+    background-color: $mirage;
+    color: white;
+}
+.btn:focus {
+    background-color: $cool-concrete;
+    color: $mirage;
+}
+.btn-flat {
+    color: $mirage;
+    padding: 0 1.25rem;
+    margin-bottom: 1rem;
+}
+.btn-flat:hover {
+    border: 1px solid $scarlet;
+}
+
+// this may not work well with the comic background- unless change from hover to selected
+.btn-flat:hover {
+    background-color: rgba(249,46,78,0.15);
+}
+p.author {
+    text-align: center;
+    color: $scarlet;
+    padding: 0 2rem;
+    font: 100% $link-font;
+    font-size: 1.5rem;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.batman_logo img {
+    width: 15%;
+}
+// #sixties_batman:hover {
+//     background: url('../images/darkknight.png');
+// }
+.batman_begins {
+    margin-bottom: 2rem;
+}
+.comic_card_container {
+    background-color: $ghost;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    text-align: center;
+    padding: 2rem;
+    margin: 2.5rem;
+}
+.comic_card {
+    background: $purp-ghost;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin: 0 .5rem;
+}
+.comic_card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border: 1px solid $mirage-lt;
+}
+.modal {
+    background-color: $mirage;
+}
+.modal .modal-footer {
+    background-color: $cool-concrete;
+}
+.collapsible .modal {
+    background-color: $cool-concrete;
+}
+.collapsible .modal p {
+    color: $mirage-lt;
+    border-left: 1px solid $mirage-lt;
+}
+.collapsible .modal-footer {
+    background-color: $mirage;
+}
+.modal-content h3,
+.collapsible .modal-content h3 {
+    color: $scarlet;
+    text-transform: uppercase;
+    text-align: left;
+}
+/* .collapsible-body .modal-footer .btn-flat {
+    color: $mirage;
+} */
+.modal-content p {
+    color: #adadad;
+    line-height: 2;
+    text-align: left;
+    border-left: 1px solid white;
+    padding-left: 1.5rem;
+    /* font-style: italic; */
+}
+.marked {
+    background-color: #78fba5;
+    -webkit-tap-highlight-color: #78fba5;
+    border: 1px solid #07ed56;
+}
+.collapsible-body .comic_card .marked {
+    color: $mirage;
+}
+.marked:focus {
+    background-color: #78fba5;
+    -webkit-tap-highlight-color: #78fba5;
+    border: 1px solid #07ed56;
+}
+.year_large {
+    font: 100% $heading-font;
+    // position: fixed;
+    font-size: 9rem;
+    opacity: 0.15;
+    // top: -2rem;
+    text-align: center;
+    line-height: 1px;
+}
+.collapsible-header, .collapsible-body {
+    border-radius: 2px;
+    border: 1px solid $mirage;
+}
+.collapsible-header, .collapsible-header h1 {
+    background-color: $mirage;
+    color: white;
+}
+.collapsible {
+    margin: 0 2.5rem;
+}
+.collapsible h1 {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+.collapsible h3 {
+    color: white;
+    padding-bottom: 2rem;
+}
+.collapsible-body {
+    background-color: $mirage;
+    background: -webkit-linear-gradient($mirage, $scarlet);
+    background: -moz-linear-gradient($mirage, $scarlet);
+    background: linear-gradient($mirage, $scarlet);
+    text-align: center;
+}
+.collapsible-body .comic_card {
+    text-align: center;
+    background-color: $mirage-lt;
+    margin: 0 .5rem;
+    display: inline-block;
+}
+.collapsible-body .comic_card:hover {
+    border: 1.5px solid white;
+}
+.collapsible-body h2, .collapsible-body .btn, .collapsible-body .btn-flat, .collapsible-body .year_large {
+    color: white;
+}
+.collapsible-body .btn {
+    border: 1px solid white;
+}
+.collapsible-body .btn:hover, .collapsible-body .btn:focus {
+    border: 1px solid $mirage;
+}
+.collapsible-body .btn:focus {
+    color: $mirage;
+}
+.footer {
+    background-color: $mirage-lt;
+    /* background-image: url('../images/first-batsignal-transparent.png'); */
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    text-align: center;
+    padding: 2rem;
+    margin: 2.5rem;
+}
+.footer h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
+.footer:hover a {
+    text-decoration: underline;
+}
+#copyright {
+    font-size: 1.25rem;
+    color: #adadad;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1135px) {
+    .comic_card_container,
+    .collapsible,
+    .footer {
+        margin: 1.5rem 0.5rem;
+    }
+}
+@media (max-width: 1025px) {
+    .comic_card {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .subtitle {
+        font-size: 1.75rem;
+    }
+    .comic_card,
+    .collapsible-body .comic_card {
+        margin-bottom: .75rem;
+    }
+}
+@media only screen and (min-width: 993px){
+    .row .col.l6 {
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .year_large {
+        top: -5rem;
+    }
+    .comic_card,
+    .collapsible-body .comic_card {
+        margin-bottom: .75rem;
+    }
+}
+@media (max-width: 425px) {
+    .subtitle {
+        font-size: 1.75rem;
+        color: $mirage;
+    }
+    .year_large {
+        display: none;
+    }
+    .comic_card_container {
+        margin: .5rem;
+    }
+    .comic_card,
+    .collapsible-body .comic_card {
+        margin-bottom: .75rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+//back to top below last card in both short list & further reading
+
+//make batman logo bigger on smaller screen sizes
+
+//is subtitle text too large on desktop?
+
+//push everything to live gh-page on github when done

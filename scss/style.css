@@ -1,0 +1,284 @@
+body {
+  font: 100% "Roboto Slab", serif;
+  font-size: 1.25rem;
+  color: #25405d;
+  background-color: #dae1e8; }
+
+.wrapper {
+  margin: 20px; }
+
+h1 {
+  font: 100% "Allan", cursive;
+  font-size: 5rem;
+  color: #0F1A26;
+  text-align: center; }
+
+h2 {
+  font: 100% "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #F92E4E; }
+
+h3 {
+  font: 100% "Cutive Mono", monospace;
+  font-size: 2.5rem;
+  color: #4545D3; }
+
+li {
+  color: #2727A4; }
+
+a {
+  text-decoration: none; }
+
+.row, .collapsible-body .row {
+  margin-bottom: 0.5rem; }
+
+.row .col {
+  float: none; }
+
+.inline_link {
+  color: #F92E4E; }
+
+.btn {
+  font: "Cutive Mono", monospace;
+  background-color: rgba(255, 255, 255, 0);
+  color: #0F1A26;
+  border: 1px solid #0F1A26;
+  margin-bottom: 1rem; }
+
+.btn:hover {
+  background-color: #0F1A26;
+  color: white; }
+
+.btn:focus {
+  background-color: #dae1e8;
+  color: #0F1A26; }
+
+.btn-flat {
+  color: #0F1A26;
+  padding: 0 1.25rem;
+  margin-bottom: 1rem; }
+
+.btn-flat:hover {
+  border: 1px solid #F92E4E; }
+
+.btn-flat:hover {
+  background-color: rgba(249, 46, 78, 0.15); }
+
+p.author {
+  text-align: center;
+  color: #F92E4E;
+  padding: 0 2rem;
+  font: 100% "Cutive Mono", monospace;
+  font-size: 1.5rem; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.batman_logo img {
+  width: 15%; }
+
+.batman_begins {
+  margin-bottom: 2rem; }
+
+.comic_card_container {
+  background-color: rgba(250, 248, 255, 0.8);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-align: center;
+  padding: 2rem;
+  margin: 2.5rem; }
+
+.comic_card {
+  background: #FAF8FF;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 0 .5rem; }
+
+.comic_card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border: 1px solid #25405d; }
+
+.modal {
+  background-color: #0F1A26; }
+
+.modal .modal-footer {
+  background-color: #dae1e8; }
+
+.collapsible .modal {
+  background-color: #dae1e8; }
+
+.collapsible .modal p {
+  color: #25405d;
+  border-left: 1px solid #25405d; }
+
+.collapsible .modal-footer {
+  background-color: #0F1A26; }
+
+.modal-content h3,
+.collapsible .modal-content h3 {
+  color: #F92E4E;
+  text-transform: uppercase;
+  text-align: left; }
+
+/* .collapsible-body .modal-footer .btn-flat {
+    color: $mirage;
+} */
+.modal-content p {
+  color: #adadad;
+  line-height: 2;
+  text-align: left;
+  border-left: 1px solid white;
+  padding-left: 1.5rem;
+  /* font-style: italic; */ }
+
+.marked {
+  background-color: #78fba5;
+  -webkit-tap-highlight-color: #78fba5;
+  border: 1px solid #07ed56; }
+
+.collapsible-body .comic_card .marked {
+  color: #0F1A26; }
+
+.marked:focus {
+  background-color: #78fba5;
+  -webkit-tap-highlight-color: #78fba5;
+  border: 1px solid #07ed56; }
+
+.year_large {
+  font: 100% "Allan", cursive;
+  font-size: 9rem;
+  opacity: 0.15;
+  text-align: center;
+  line-height: 1px; }
+
+.collapsible-header, .collapsible-body {
+  border-radius: 2px;
+  border: 1px solid #0F1A26; }
+
+.collapsible-header, .collapsible-header h1 {
+  background-color: #0F1A26;
+  color: white; }
+
+.collapsible {
+  margin: 0 2.5rem; }
+
+.collapsible h1 {
+  margin-top: 0;
+  padding-top: 1rem; }
+
+.collapsible h3 {
+  color: white;
+  padding-bottom: 2rem; }
+
+.collapsible-body {
+  background-color: #0F1A26;
+  background: -webkit-linear-gradient(#0F1A26, #F92E4E);
+  background: -moz-linear-gradient(#0F1A26, #F92E4E);
+  background: linear-gradient(#0F1A26, #F92E4E);
+  text-align: center; }
+
+.collapsible-body .comic_card {
+  text-align: center;
+  background-color: #25405d;
+  margin: 0 .5rem;
+  display: inline-block; }
+
+.collapsible-body .comic_card:hover {
+  border: 1.5px solid white; }
+
+.collapsible-body h2, .collapsible-body .btn, .collapsible-body .btn-flat, .collapsible-body .year_large {
+  color: white; }
+
+.collapsible-body .btn {
+  border: 1px solid white; }
+
+.collapsible-body .btn:hover, .collapsible-body .btn:focus {
+  border: 1px solid #0F1A26; }
+
+.collapsible-body .btn:focus {
+  color: #0F1A26; }
+
+.footer {
+  background-color: #25405d;
+  /* background-image: url('../images/first-batsignal-transparent.png'); */
+  color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-align: center;
+  padding: 2rem;
+  margin: 2.5rem; }
+
+.footer h3 {
+  color: white;
+  font-size: 1.5rem; }
+
+.footer a {
+  color: white;
+  text-decoration: underline; }
+
+.footer:hover a {
+  text-decoration: underline; }
+
+#copyright {
+  font-size: 1.25rem;
+  color: #adadad; }
+
+/* MEDIA QUERIES */
+@media (max-width: 1135px) {
+  .comic_card_container,
+  .collapsible,
+  .footer {
+    margin: 1.5rem 0.5rem; } }
+@media (max-width: 1025px) {
+  .comic_card {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto; }
+
+  .subtitle {
+    font-size: 1.75rem; }
+
+  .comic_card,
+  .collapsible-body .comic_card {
+    margin-bottom: .75rem; } }
+@media only screen and (min-width: 993px) {
+  .row .col.l6 {
+    width: 48%; } }
+@media only screen and (max-width: 768px) {
+  .year_large {
+    top: -5rem; }
+
+  .comic_card,
+  .collapsible-body .comic_card {
+    margin-bottom: .75rem; } }
+@media (max-width: 425px) {
+  .subtitle {
+    font-size: 1.75rem;
+    color: #0F1A26; }
+
+  .year_large {
+    display: none; }
+
+  .comic_card_container {
+    margin: .5rem; }
+
+  .comic_card,
+  .collapsible-body .comic_card {
+    margin-bottom: .75rem; }
+
+  h1 {
+    font-size: 4rem; }
+
+  h2 {
+    font-size: 1.75rem; } }
+
+/*# sourceMappingURL=style.css.map */
