@@ -1,22 +1,23 @@
 jQuery(document).ready(function() {
     jQuery('button').click(function() {
         //make sure the click is being heard
-        console.log('clicked!')
+        console.log('clicked2!')
 
         //add or remove bat signal image on click
-        jQuery(this).toggleClass('marked');
+        //jQuery(this).toggleClass('marked');
 
         //if has class 'marked', toggle button text
-        if (jQuery('button').hasClass('marked')) {
+        if (!jQuery(this).hasClass('marked')) {
+            jQuery(this).addClass('marked');
             jQuery(this).empty();
             jQuery(this).append('Read It!<i class="material-icons left">bookmark</i>');
         }
         // else (jQuery('button').text('Mark Read'));
         else {
-        if (!jQuery('button').hasClass('marked')) {
+            jQuery(this).removeClass('marked');
+
             jQuery(this).empty();
-            (jQuery(this).append('mark read<i class="material-icons left">bookmark_outline</i>'));
-            }
+            jQuery(this).append('mark read<i class="material-icons left">bookmark_outline</i>');
         }
 
         //prevent page from jumping on click
