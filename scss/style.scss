@@ -76,6 +76,9 @@ li {
 a {
     text-decoration: none;
 }
+.scroll_link {
+    font-size: 1.75rem;
+}
 .row, .collapsible-body .row {
     margin-bottom: 0.5rem;
 }
@@ -126,12 +129,19 @@ p.author {
 .left {
     text-align: left;
 }
-.batman_logo img {
-    width: 15%;
+/* .batman_logo img {
+    max-width: 40%;
+} */
+@media (min-width: 320px) and (max-width: 767px) {
+    .batman_logo img {
+        width: 40%;
+    }
 }
-// #sixties_batman:hover {
-//     background: url('../images/darkknight.png');
-// }
+@media (min-width: 768px) {
+    .batman_logo img {
+        width: 18%;
+    }
+}
 .batman_begins {
     margin-bottom: 2rem;
 }

@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
     jQuery('button').click(function() {
         //make sure click event is being heard
-        console.log('clicked2!')
+        console.log('clicked!')
 
         //if has class 'marked', turn on green button background and change text
         if (!jQuery(this).hasClass('marked')) {
