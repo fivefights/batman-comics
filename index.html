@@ -927,8 +927,8 @@
     <!-- begin footer -->
     <div>
         <footer class="footer">
-            <h3><i class="material-icons">fingerprint</i> The original list can be found at <a class="inline_link" target="_blank" href="https://comicvine.gamespot.com/batman/4005-1699/guide/">Comic Vine</a></h3>
-            <h3 id="copyright">Copyright &copy; 2017 Julia Christian</h3>
+            <h3><i class="material-icons">fingerprint</i> Original list by <a class="inline_link" target="_blank" href="https://comicvine.gamespot.com/batman/4005-1699/guide/">Comic Vine</a></h3>
+            <h3 id="copyright">Copyright &copy; 2018 Julia Christian</h3>
         </footer>
     </div>
 
@@ -945,6 +945,40 @@
         $(document).ready(function () {
             $('.scrollspy').scrollSpy();
         });
+
+        // if button has class .marked (which means it's been clicked), saved its marked state in localStorage
+
+        // when button is clicked, give it a data attribute or value of clicked and store in a variable
+
+        // store those variables and their keys in localStorage
+
+        // spit that storage back outside of the click event with getItem
+
+        var markRead = $('#mark_button');
+        // console.log(markRead);
+        
+        // this is only working on the first #mark_button and is not toggling the class correctly
+        $('#mark_button').toggleClass(window.localStorage.clicked);
+
+/* Toggle */
+$('#mark_button').on('click',function(){
+
+   if (window.localStorage.clicked != "marked" ) {
+      $('#mark_button').addClass("marked", true );
+      window.localStorage.clicked = "marked";
+   } else {
+      $('#mark_button').removeClass("marked", false );
+      window.localStorage.clicked = "";
+   }
+
+});
+
+        // $(markRead).on("click", function() {
+        //     markRead = markRead.attr('data', 'clicked');
+        //     console.log('read it!');
+        // });
+
+        
     </script>
 
 </body>
