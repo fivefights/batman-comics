@@ -1,3 +1,5 @@
+// this is probably where local storage should be used
+
 jQuery(document).ready(function() {
     jQuery('button').click(function() {
         //make sure click event is being heard
