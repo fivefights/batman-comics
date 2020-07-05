@@ -33,6 +33,10 @@ a {
 .scroll_link {
   font-size: 1.75rem; }
 
+.scroll_link:hover {
+  text-decoration: underline;
+}
+
 .row, .collapsible-body .row {
   margin-bottom: 0.5rem; }
 
@@ -80,6 +84,14 @@ p.author {
 
 .left {
   text-align: left; }
+
+#serious:hover {
+  border-bottom: 2px solid #F92E4E;
+}
+
+#serious h1:hover {
+  color: #F92E4E;
+}
 
 /* .batman_logo img {
     max-width: 40%;
